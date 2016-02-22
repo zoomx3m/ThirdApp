@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextHelpStyleLand"
+            android:text="@string/First_number"
+            android:textStyle="normal"
+            android:typeface="normal"
+            android:layout_marginStart="50dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextHelpStyleLand"
+            android:text="@string/Second_number"
+            android:textStyle="normal"
+            android:typeface="normal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp" />
+
+        <EditText
+            android:id="@+id/Edit"
+            style="@style/TextNummStyleLand"
+            android:hint="@string/add_n1"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="50dp"/>
+
+
+        <EditText
+            android:id="@+id/Edit2"
+            style="@style/TextNummStyleLand"
+            android:hint="@string/add_n2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginStart="345dp" />
+
+        <Button
+            android:id="@+id/button_1"
+            style="@style/TextButtonStyle"
+            android:layout_marginStart="30dp"
+
+            android:layout_alignStart="@+id/Edit"
+            android:layout_below="@+id/Edit"
+            android:text="@string/plus"/>
+
+        <Button
+            android:id="@+id/button_2"
+            style="@style/TextButtonStyle"
+            android:layout_marginStart="30dp"
+            android:text="@string/minus"
+            android:layout_below="@+id/Edit2"
+            android:layout_alignStart="@+id/Edit2" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextHelpStyleLand"
+            android:text="@string/Result"
+            android:layout_below="@id/button_2"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:typeface="normal"/>
+
+         <TextView
+            android:id="@+id/textView4"
+            style="@style/TextResultStyle.TextResultStyleLand"
+            android:layout_below="@+id/textView3"
+            android:hint="@string/Result1" />
+
+
+</RelativeLayout>

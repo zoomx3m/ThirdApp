@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextHelpStyle"
+        android:text="@string/First_number"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/Edit"
+        style="@style/TextNumStyle"
+        android:layout_below="@+id/textView"
+        android:hint="@string/add_n1" />
+
+
+    <Button
+        android:id="@+id/button_1"
+        style="@style/TextButtonStyle"
+        android:layout_alignStart="@+id/Edit"
+        android:layout_below="@+id/Edit"
+        android:layout_marginStart="10dp"
+        android:text="@string/plus"/>
+
+    <Button
+        android:id="@+id/button_2"
+        style="@style/TextButtonStyle"
+        android:layout_alignEnd="@+id/Edit"
+        android:layout_below="@+id/Edit"
+        android:layout_marginEnd="10dp"
+        android:text="@string/minus"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextHelpStyle"
+        android:layout_below="@+id/button_1"
+        android:text="@string/Second_number"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/Edit2"
+        style="@style/TextNumStyle"
+        android:layout_below="@+id/textView2"
+        android:hint="@string/add_n2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextHelpStyle"
+        android:layout_below="@+id/Edit2"
+        android:text="@string/Result"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/TextResultStyle"
+        android:layout_below="@+id/textView3"
+        android:hint="@string/Result1" />
+
+
+</RelativeLayout>
